@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: sans-serif;
+	background-color: #FBF8F1;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 1px;
+	margin: 0px;
+	overflow: hidden;
+
+}
+
+
+
+.form-container {
+	float: left;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.form-detiles-contener{
+	width: 80%;
+	min-height: 400px;
+	margin-top: 50px;
+}
+.form-detiles-contener p{
+	margin: 0px;
+	padding: 0px;
+}
+.validation-massage-div {
+	color:#FF4300;
+	font-size: 10px;
+	float: right;
+	padding: 12px 0px 4px;
+}
+.form-massage-paragraf{
+	font-size: 10px;
+	color: rgb(83, 83, 83);
+	margin-top: 20px;
+}
+ label{
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+
+}
+form input{
+	width: 100%;
+	height: 38px;
+	font-size: 10px;
+	border-radius: 4px;
+	border: 1px solid rgb(138, 138, 138);
+	padding: 10px;
+	margin: 0px 0px 10px;
+
+ }
+.pssword{
+	min-height: 100px;
+	width: 47%;
+	float: left;
+	display: inline;
+ }
+.pass{
+	margin-left: 6%;
+ }
+
+#i-am-a {
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+ input[type="radio"]{
+	display: none;
+	margin: 10px 0px 0px 0px;
+
+ }
+ input[type="radio"] + label{
+	border: 1px solid rgb(138, 138, 138);
+	background-color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline;
+	height: 100px;
+	width: 23%;
+	text-align: center;
+	padding: 12px 30px ;
+
+ }
+ input[type="radio"]:checked + label{
+	background-color: rgb(78, 78, 78);
+	color: white;
+ }
+ input[type="radio"]:hover{
+	 border: 2px ridge rgb(204, 204, 204);
+ }
+ input[type="checkbox"] {
+	 height: 15px;
+	 width: 15px;
+	 display: inline;
+	 margin-top: 35px;
+	 float: left;
+
+ }
+#check {
+	display: inline-flex;
+	padding-left: 10px;
+	margin: 36px 0px 30px 0px;
+}
+.butn{
+	width: 200px;
+	color: white;
+	background-color: #EF6036;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 40px;
+}
+input:hover{
+	border: 2px ridge rgb(204, 204, 204) ;
+	box-shadow: 1px 1px 5px 1px rgb(204, 204, 204);
+}
+
+.overlay-container{
+	padding-bottom: 50px;	
+	min-height: 1000px;
+	float: right;
+	background-image: url("../image/login.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.overlay-right {
+	text-shadow: 1px 1px 2px black , 0 0 1em black , 0 0 1em black;
+	height: 200px;
+	width: 90%;
+	margin: 20% 20% 0% 10%;
+	color: white;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 920px){
+	.overlay-container{
+		display: none;
+	}
+}
+
+[class*="col-"] {
+    width: 100%;
+
+}
+
+
+@media only screen and (min-width: 920px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+#continer{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 700px;
+}
+#formContiner {
+	background-color: white;
+	border-radius: 20px;
+	height: 600px;
+	width: 400px;
+	padding: 60px;
+	font-size: 20px;
+
+}
+#formContiner:hover {
+	border: 1px solid lightgray;
+	box-shadow: 1px 1px 5px 1px rgb(204, 204, 204);
+}
+.otpdiv{
+	height: 100px;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+
+}
+.OTP {
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 0px;
+	text-align: center;
+	font-size: 14px;
+}
+.OTP::-webkit-outer-spin-button ,.OTP::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+

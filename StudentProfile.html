@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/ManageStudentProfile.css">
+    <link rel="stylesheet" href="css/StudentProfile.css">
+    <title>Student profile</title>
+</head>
+<body>
+    <div id="container">
+        <div class="navbar-column topnav " >
+           <div class="addtest"><small><p>Add <br> New Test</p> <a href=""> + </a></small></div>
+           <ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+           <ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+           <ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+           <ul class="Coin"><li><a href="">Coin</a></li></ul>
+        </div>
+        <div class="column-divs">
+			<div class="navbar-row  " id="mytopnav" >
+				<div class="navbarSearch-div1">
+					<form class="search-form" action="/search" role="search">
+						<input type="submit"  id="submit">
+				        <input type="search" id="search" name="p" placeholder="Search">
+					</form>
+				</div>
+				<div class="navbarSearch-div2">
+					<div class="alertpic"><img src="image/ic_add_alert_24px.png" alt=""></div>
+				    <small class=".min-profimg">
+						<img class="min-profimg"  src="image/min-profile.jpg" alt="profile">
+					</small> 
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+							<div class="addtest"><small><p style="color: #FE6036;">Add <br> New Test</p> <a href=""> + </a></small></div>
+							<ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+						  <ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+						  <ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+						  <ul class="Coin"><li><a href="">Coin</a></li></ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="profileContainer">
+                <div class="Profile">
+                    <div class="studentPicture">
+                        <img src="image/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg" alt="">
+                    </div>
+    
+                    <div class="studentprofile">
+                        <div class="line-div"></div><h6>Hello</h6>
+                        <div class="i-am">
+                            <h3><p>I'm </p> Golsum Ayral</h3> 
+                            <div class="location"><img src="image/ic_place_24px.png" alt=""><p> Kabul Afghanistan</p></div>
+                        </div>
+    
+                        <div class="biography"><p><span>This is one of the most realistic dashboards on the whole Behance 
+                            This is one of the most realistic dashboards on the whole Behance This is one of 
+                            the most realistic dashboards on the whole Behance This is one of the most realistic</span> 
+                            <span class="seemore">dashboards on the whole Behance This is one of the most realistic dashboards on the 
+                                whole Behance This is one of the most realistic dashboards on the whole Behance</span></p></div>
+    
+                        <div class="contact-details-div">
+                            <div class="student-contact1" >
+                                <img src="image/ic_mail_outline_24px.png" alt="">
+                                <p p style="display: inline;">golsumayral@gmail.com</p>
+                            </div>
+                            <div class="student-contact2" >
+                                <img src="image/ic_call_24px.png" alt="">
+                                <p p style="display: inline;">+93700998088</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>		
+		</div>
+    </div>
+	<script src="js/signup.js"></script>
+</body>
+</html>

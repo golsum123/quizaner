@@ -1,0 +1,115 @@
+body {
+    overflow: visible;
+}
+.formContainer {padding-bottom: 50px;}
+.right { width: 35%; }
+.left { 
+    width: 35%; 
+}
+.studentPicture img {
+    height: 110px; width: 90px;
+    border-radius: 10px;
+    margin: -20px 0px 0px -15px;
+    position: absolute;
+
+}
+h5 {margin-left: -20px;}
+.Profile { margin-bottom: 20px;}
+.studentprofile {
+    color: rgb(71, 71, 71);
+    height: 120px; width: 100%;
+    border-radius: 10px;
+    padding: 0px 0px 0px 80px;
+    margin-bottom: 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: #fBf8f1;
+}
+h6 { margin: 10px 5px 5px;}
+p { 
+    margin: 5px;
+    font-size: 10px;
+    padding: 0px;
+}
+.Number { 
+    width: 100%; height: 1px;
+    margin: 0px; padding: 0px;
+}
+.Number p { 
+    font-size: 10px;
+    display: inline;
+    width: 40px; height: 30px;
+    border-radius: 0px 10px 0px 10px;
+    margin: 0px; padding: 10px;
+    background-color: #2D3642;
+    color: white;
+    float: right;
+}
+.Average-container{
+    margin: auto;
+    background-color:rgb(255, 226, 220);
+    width: 95%; border-radius: 15px; 
+    height: 20px;
+
+}
+.Average {
+    width: 54%; height: 20px;
+    background-color: #fe6036;
+    padding: 1px;
+    border-radius: 15px;
+}
+.Marks-p-div { 
+    height: 20px; width: 90%;
+    margin: auto;
+    margin-top: -5px;
+    
+}
+.first-p , .secound-p{ 
+    display: inline;
+    margin: 0px; padding: 0px;
+}
+.first-p { float: left; }
+.secound-p { float: right; }
+
+
+@media screen and  (max-width: 980px){
+    .formContainer { height: 1200px; padding-bottom: 30px;}
+    h5 {margin-bottom: 50px;}
+    .right { 
+        width: 100%; 
+        height: 500px;}
+    .left { 
+        width: 100%; 
+        height: 500px;
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and  (max-width: 541px){
+    .formContainer {padding: 20px 10px 50px;}
+    h5 {margin: auto;}
+    
+    .Profile { width: 100%; margin-top: 110px;}
+    .studentPicture img {
+        margin: -100px 0px 0px 23%;
+        position: absolute;
+    }
+    .studentprofile {
+        height: 130px;
+        padding: 0px;
+    }
+    h6 { margin: 40px 5px 5px;}
+    .first-p , .secound-p{
+        margin-top: 5px;
+    }
+    .right { 
+        height: 700px;}
+    .left { 
+        height: 700px;
+        margin-top: 120px;
+    }
+
+}

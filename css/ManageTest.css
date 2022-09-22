@@ -1,0 +1,96 @@
+.catagoryAndScore-div {
+    width: 100%;
+    display: block;
+    min-height: 70px;
+}
+#catagory-div {
+    width: 65%;
+    float: left;
+    display: inline;
+    margin-right: 4%;
+}
+#score-div {
+    width: 30%; float: right; display: inline;
+}
+.privacy-price-div {
+    width: 49%;
+    float: left;
+    margin-right: 2px;
+}
+.Privacy-price-pic-div {
+    width: 100%; height: 130px;
+    display: block;
+    margin-bottom: 20px;
+}
+.profilePhoto-div #first-div {
+    width: 46%; float: right;
+    background-color: white;
+    border: 1px dashed gray;
+}
+.profilePhoto-div label { margin-left: 5%; }
+.info-pic { 
+    height: 11px; width: 11px;
+    margin: 10px 0px -2px 7px;
+}
+#TestDiscription {
+    width: 100%;
+    height: 110px;
+    font-size: 10px;
+    padding: 15px;
+    margin-bottom: 40px;
+    display: block;
+}
+.butn { width: 40%; }
+.butn1 {
+    width: 40%;
+    border: 1px solid #FE6036;
+    background-color: white;
+}
+@media (max-width: 970px){
+    .formContainer {
+        height: 1000px;
+        padding-top: 0px;
+    }
+    .right {
+        margin: 0px; height: 450px
+	}
+    .left {
+        width: 100%; float: none;
+        margin: 0%;
+    }
+}
+@media screen and  (max-width: 541px){
+    .formContainer {
+        height: 1100px;
+        padding-top: 0px;
+    }
+    .right { margin:0px; height: 470px }
+    .left { height: 550px; }
+    #catagory-div {
+        width: 100%;
+        display: block;
+        margin-right: 0%;
+    }
+    #score-div { width: 100%; display: block; }
+    #TimeLimite { margin-top: 50px;}
+    .privacy-price-div {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .Privacy-price-pic-div {
+        width: 100%; height: 200px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .profilePhoto-div #first-div {
+        float: none; margin-bottom: 30px;
+    }
+    .profilePhoto-div label { margin-left: 0%; }
+
+    #TestDiscription { height: 70px;}
+    .butn { width: 80%; display: block; }
+    .butn1 {
+        width: 80%; ;
+    }
+}

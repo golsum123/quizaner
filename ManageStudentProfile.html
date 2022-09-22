@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/ManageStudentProfile.css">
+	<script src="js/signup.js"></script>
+    <title>Manage profile</title>
+</head>
+<body>
+    <div id="container">
+        <div class="navbar-column topnav " >
+           <div class="addtest"><small><p>Add <br> New Test</p> <a href=""> + </a></small></div>
+           <ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+           <ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+           <ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+           <ul class="Coin"><li><a href="">Coin</a></li></ul>
+        </div>
+        <div class="column-divs">
+			<div class="navbar-row  " id="mytopnav" >
+				<div class="navbarSearch-div1">
+					<form class="search-form" action="/search" role="search">
+						<input type="submit"  id="submit">
+				        <input type="search" id="search" name="p" placeholder="Search">
+					</form>
+				</div>
+				<div class="navbarSearch-div2">
+					<div class="alertpic"><img src="image/ic_add_alert_24px.png" alt=""></div>
+				    <small class=".min-profimg">
+						<img class="min-profimg"  src="image/min-profile.jpg" alt="profile">
+					</small> 
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+							<div class="addtest"><small><p style="color: #FE6036;">Add <br> New Test</p> <a href=""> + </a></small></div>
+							<ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+						  <ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+						  <ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+						  <ul class="Coin"><li><a href="">Coin</a></li></ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="formContainer">
+				<div class="right">
+					<form action="#" method="post" accept-charset="UTF-8"  id="signup" name="form1"
+					enctype="application/x-www-form-urlencoded" autocomplete="on" validate >
+					<h5>Hey, Naser Welcome!</h5  >
+					<div class="username-email-Photo-div">
+						<div class="usernameAndEmail-div">
+							<div >
+								<label for="user-name">Username</label>
+								<small class="validation-massage-div" id="user-name-validation"></small>
+								<input type="text" id="user-name" name="user-name" 
+								placeholder="User Name"  autofocus>
+							</div>
+							<div >
+								<label for="email">Email</label>
+								<small class="validation-massage-div" id="email-validation"></small>
+								<input type="text"  id="email" placeholder="Email" >
+							</div>
+						</div>
+						<div class="profilePhoto-div" >
+							<label  for="uploadPic" >Profile picture</label>
+							<div id="first-div" onclick="getfile()">
+								<img style="height: 18px;" src="image/ic_add_a_photo_24px.png" alt="">
+								<p >Clic here</p>
+							</div>
+					        <div style="height:0px; width:0px; overflow: hidden;"><input id="uploadPic" type="file"></div>
+						</div>
+						<div class="Bio">
+							<br>
+							<label class="label"  style="display: block; " for="bio">Bio</label>
+							<textarea name="message"  id="bio">This is one of the most realistic dashboards on the whole Behance This is one of the most realistic dashboards on the whole Behance This is one of the most realistic dashboards on the whole Behance This is one of the most realistic dashboards on the whole Behance</textarea>
+						</div>
+					</div>					
+				    </form>
+				</div>
+				<div class="left">
+					<form action="#" method="post" accept-charset="UTF-8"  id="form2" name="form2"
+					enctype="application/x-www-form-urlencoded" autocomplete="on" validate>
+					<div >
+						<label id="phone" >Phone</label>
+						<input type="tel"  id="phone"   placeholder="Phone Number">
+					</div>
+					<div >
+						<label id="country" >Country</label>
+						<input type="text"  id="country"   placeholder="Your Country">
+					</div>
+					<div >
+						<label id="city" >City</label>
+						<input type="text"  id="city"   placeholder="Your City">
+					</div>
+					<div class="pssword pass1">
+						<label for="password">Pasword</label>
+						<input type="password"  style="margin-bottom: 2px;" onfocus="showConfirmField()" id="password" placeholder="**********">
+						<small style="padding-top: 0px;"  class="validation-massage-div" id="passconfir"></small>
+	
+					</div>
+					<div class="pssword pass">
+						<label for="Confirmpasword">Confirm Pasword</label>
+						<input type="password" style="margin-bottom: 2px;" onkeyup="confirm()" id="Confirmpasword" placeholder="**********" >
+						<small style="padding-top: 0px;"  class="validation-massage-div" id="passconfirm"></small>
+					</div>
+					<input type="submit"class="butn" value="Creat Account" onclick="submitform()">
+					</form>
+				</div>
+			</div>		
+		</div>
+    </div>
+	<script src="js/signup.js"></script>
+</body>
+</html>

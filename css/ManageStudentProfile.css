@@ -1,0 +1,315 @@
+
+#container{
+    width: 100%;
+}
+#container, .navbar-column,.navbar-row, .addtest, .addtest small, li,.column-divs,
+.formContainer,.username-email-Photo-div, #first-div, .navbarSearch-div2, 
+.navbar-row, .profileContainer, .Profile,.TeacherDetails, .details {
+    display: -webkit-flex;
+    display: flex;
+}
+.navbar-column ,.column-divs, #first-div, .studentprofile, .profileContainer,  .details {
+    -webkit-flex-direction:column;
+    flex-direction: column;
+}
+.navbar-column {
+    height: 700px;
+    width: 200px;
+    background-color: white;
+    color: #EF6036;
+    border-radius: 20px;
+    padding: 20px;margin: 30px;
+}
+.addtest{height: 30%; margin-bottom: 20px;}
+.addtest small {
+    height: 65px; width: 100%; font-size: 11px;
+    background-color:rgb(255, 226, 220);
+    border-radius: 10px; padding: 8px;
+    
+}
+.addtest, .addtest small,.formContainer,#first-div, .profileContainer,.details, .TeacherDetails {
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.addtest p {float: left;font-weight: bold;}
+.addtest a {
+    text-decoration: none; 
+    color: white; float: right;
+    height: 36px;width: 36px;
+    background-color: #EF6036;
+    margin-left: 25px; border-radius: 18px;
+    font-size: 20px; padding-top: 7px;
+    text-align: center;
+}
+li {
+    list-style: none;
+    font-size: 13px;
+    height: 45px; border-radius: 18px;
+    margin-bottom: 2px;padding-left: 13px;
+    font-weight: bold;
+    -webkit-align-items: center;
+    align-items: center;
+}
+ul {
+    padding-left: 10px;
+    margin: 0px 0px;
+}
+li a {
+    text-decoration: none;
+    color: #EF6036;
+}
+.Dashboard li::before{
+    content: '';   
+    display: inline-block;
+    height: 15px; width: 15px;
+    background-image: url('../image/ic_help_outline_24px.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 0px 15px 0px 0px;
+}
+.MyExam li::before {
+    content: '';   
+    display: inline-block;
+    height: 15px; width: 15px;
+    background-image: url('../image/ic_alarm_on_24px.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 0px 15px 0px 0px;
+}
+.Toppers li::before {
+    content: '';   
+    display: inline-block;
+    height: 15px; width: 15px;
+    background-image: url('../image/ic_account_circle_24px.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 0px 15px 0px 0px;
+}
+.Coin li::before {
+    content: '';   
+    display: inline-block;
+    height: 15px; width: 15px;
+    background-image: url('../image/ic_error_outline_24px.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 0px 15px 0px 0px;
+}
+.column-divs {  width: 100%; }
+.navbar-row {
+    height: 50px;
+    display: block;
+    margin:30px 30px 30px 0px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: white;
+  
+}
+.navbarSearch-div1{
+    height: 30px;
+    float: left;
+    width: 40%;
+    margin: 5px 30px ;
+    text-align: center;
+}
+.search-form {
+    position: relative;
+    max-width: 60% ;   
+}
+.search-form #search {
+    display: block;
+    width: 100%; height: 30px;
+    border: none;
+    margin: 0px;
+    padding: 6px 27px 6px 40px;
+    cursor: pointer;
+    color: rgb(102, 102, 102);
+    background-color: #FBF8F1;
+    border: 1px solid inherit;
+    border-radius: 15px;
+}
+.search-form #submit{
+    text-indent: -200px;
+    width: 20px; height: 20px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    border:none;
+    background-image: url('../image/ic_search_24px.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.7; padding: 0;
+}
+.navbarSearch-div2 {
+    height: 20px;
+    width: 100px;
+    float: right;
+}
+.navbarSearch-div2  img  { float: right;}
+.min-profimg {
+    height: 40px; width: 40px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.alertpic {width: 20px; padding-top: 10px;}
+.dropbtn {
+  display: none;
+  background-image: url("../image/ic_more_vert_24px.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 25px; width: 10px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn {
+  padding: 0px;margin: 0px;
+  height: 3px;
+}
+#mytopnav .addtest a{    
+    text-decoration: none; 
+    color: white; float: right;
+    height: 36px;width: 36px;
+    background-color: #EF6036;
+    margin-left: 25px; border-radius: 18px;
+    font-size: 20px; padding: 7px 0px 0px 0px;
+    text-align: center;
+}
+.dropbtn:focus { background-color:#FBF8F1;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #FE6036;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.show { display: block; }
+.formContainer {
+    margin: 0px 30px 0px 0px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.right { width: 40%;  float: left;  height: 500px;}
+.left {
+    width: 40%; float: right; height: 330px;
+    margin-left: 10%;
+}
+h5 { margin-bottom: 40px;}
+#bio {
+    width: 100%;
+    height: 110px;
+    font-size: 10px;
+    padding: 15px;
+    font-size-adjust: initial;
+    position: relative;
+    display: block;
+}
+.label {margin-top: 105px;}
+.usernameAndEmail-div {
+    width: 60%;
+    float: left;
+    margin-right: 2px;
+}
+.username-email-Photo-div {
+    width: 100%; height: 133px;
+    display: block;
+    margin-bottom: 20px;
+}
+.profilePhoto-div #first-div {
+    height: 110px; width: 30%;
+    float: right;
+    border:2px dashed gray;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: #FBF8F1;
+}
+.profilePhoto-div label { margin-left: 10%; }
+#first-div p {
+    font-size: 10px;
+    margin: 10px;padding: 0px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+.pass1 { width: 100%; }
+.pass { display: none; }
+.butn{ float: right;}
+
+/*code for mobile resolotion*/
+@media screen and  (max-width: 541px){
+	.navbar-column { display: none; }
+    .column-divs { margin-left: 30px; }
+    .usernameAndEmail-div { width: 100%; }
+    .profilePhoto-div #first-div {
+        height: 60px;
+        float: none; 
+    }
+    #first-div p{ display: none; }
+    .profilePhoto-div label { margin-left: 0%; }
+    .label{margin-top: 10px;}
+    #bio {
+        width: 100%;
+        height: 60px;
+        font-size: 10px;
+        padding: 10px;
+        display: block;
+    }
+    #form2 { margin-top: 50px; }
+    .min-profimg {
+        height: 25px; width: 25px;
+        border-radius: 20px;
+        margin: 8px 5px 0px 15px;
+    }
+    .alertpic {width: 5px; margin-top: 0px;}
+    .navbarSearch-div2 {
+        width: 50px;padding-right: 10px;
+    }
+    .navbarSearch-div1{ width: 30%;  margin: 5px 5px ; }
+    .dropbtn {  display: inline; }
+    .navbarSearch-div2  {  margin-right:20px ;padding-right: 10px; }
+    .alertpic {  width: 10px; padding-top: 10px;   }
+    .left { height: 400px; }
+    .butn {  width: 100px;float: left; }
+}
+
+/*code for ipad resolotion */
+@media (max-width: 970px){
+	.right {
+        width: 100%; float: none;
+        margin: 0px; height: 380px
+	}
+    .left {
+        width: 100%; float: none;
+        margin: 0%;
+    }
+    .formContainer {
+        padding: 50px;
+        height: fit-content;
+        -webkit-flex-direction:column;
+        flex-direction: column;
+    }    
+    body { overflow: visible; }
+    .navbar-row {  padding: 5px 10px; }
+    .search-form #search { width: 120px; }
+   }

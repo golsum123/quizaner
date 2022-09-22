@@ -1,0 +1,121 @@
+.profileContainer {
+    height: 600px;
+    margin: 0px 30px 0px 0px;
+    border-radius: 20px;
+    background-color: white;
+}
+.Profile , .TeacherDetails {
+    width: 80%;
+    background-color: #FBF8F1;
+    border-radius: 20px;
+
+}
+.studentPicture img {
+    height: 300px;
+    width: 250px;
+    margin: -40px 0px 0px -40px;
+    position: absolute;
+    border-radius: 20px;
+}
+.studentprofile {
+    padding: 20px 0px 20px 226px;
+    width: 90%;
+    height: 300px;
+}
+.line-div{
+    display: inline;float: left;
+    width: 20px;  height: 3px;
+    margin: 12px 5px 0px 0px; padding: 0px;
+    border-bottom: 3px solid gray;
+}
+.studentprofile  h6 {
+    display: inline;
+    margin-top: 10px;padding: 0px;
+}
+.i-am {
+    height: 30px; width: 100%;
+    margin-top: 15px; padding: 0px;
+}
+.i-am h3 { display: inline;  margin-right: 30px;}
+.i-am p {
+    font-weight: normal; display: inline;
+}
+.location{
+    display: inline-flex;
+    font-size: 8px; 
+    height: 12px;
+    margin-top: -20px;
+}
+.location p { margin: 2px 6px; }
+.biography  {
+    height: 100px;
+    width: 100%;
+    font-size: 13px;
+    margin: 10px 0px ;
+}
+
+.contact-details-div  {  width: 100%; }
+.student-contact1 , .student-contact2 {
+    height: 30px;
+    float: left; 
+    font-size: 12px;
+    display: inline;
+}
+.student-contact1 {width: 60%;}
+.student-contact2 {width: 40%;}
+.student-contact img , .student-contact p {
+    display: inline;
+}
+.student-contact p { margin: 10px; padding: 0px; }
+.student-contact img { height: 11px; width: 14px; }
+@media screen and  (max-width: 1124px){
+    .biography { margin: 45px 0px 0px ; height: 170px;}
+    .Profile { 
+        height: 410px;
+        margin-top: 0px;
+    }
+    .student-contact1 {
+        width: 100%;
+        display: block;
+    }
+    .student-contact2 {
+        width: 100%;
+        display: block;
+    }
+}
+
+/*ipad resolotion code */
+@media screen and  (max-width: 980px){
+    .studentPicture img {
+        height: 150px;
+        width: 120px;
+        margin: -100px 0px 0px 20%;
+        position: absolute;
+        border-radius: 20px;
+    }
+    .Profile { 
+        height: 450px;
+        margin-top: 0px;
+    }
+    .profileContainer {
+        height: 700px;
+        padding-bottom: 0px;
+    }
+    .biography { margin: 45px 0px 0px ; height: 200px;}
+    .studentprofile {
+        padding: 70px 20px 20px 20px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .location {
+        display: block;
+        margin-top: 15px;
+    }
+    
+}
+@media screen and  (max-width: 541px){
+    .biography { margin: 70px 0px 0px ; height: 250px;}
+    .Profile { height: 540px; }
+}
+
+

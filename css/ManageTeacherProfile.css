@@ -1,0 +1,41 @@
+/* Manage Teacher profile css code*/
+
+.column-divs, #container, .row-divs {
+    display: -webkit-flex;
+    display: flex;
+}
+.navbar-row { margin-left: 30px;}
+.formContainer, .profileContainer {  width: 100%; }
+.navbar-column {  margin-top: 0px; }
+.usernameAndEmail-div { float: right; }
+.profilePhoto-div label { margin-left: 0%; }
+.profilePhoto-div #first-div{ float: left; }
+@media screen and  (max-width: 541px){ 
+    .navbar-row { margin-left: 0px;}
+    .usernameAndEmail-div { margin-bottom: 16px;}
+    .profilePhoto-div { margin-bottom: 50px;}
+    .profilePhoto-div label{ margin: 15px 0px 5px ;display: block;}
+}
+
+
+/* teacter profile css code*/
+.TeacherDetails {
+    height: 120px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.studentPicture img { height: 300px; width: 230px;}
+.details {width: 33%;}
+.details h5 { color: rgb(77, 77, 77); display: inline;}
+.details img {height: 15px; width: 15px; margin-right: 10px; display: inline;}
+.profileContainer{height: 700px;}
+@media screen and  (max-width: 980px){
+    .profileContainer { height: 850px; font-size: 15px;}
+    .details img {height: 14px; width: 14px; margin-right: 7px;}
+}
+@media screen and  (max-width: 541px){
+    .TeacherDetails {  height: 100px;}
+    .profileContainer { height: 950px; font-size: 12px;}
+    .one , .two{border-right: 1px solid #b1897e;}
+    .details img {height: 10px; width: 10px; margin-right: 5px;}
+    }

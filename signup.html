@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/signup.css">
+
+	<title>quizaner sign up</title>
+</head>
+
+
+<body>
+
+
+
+	<div class=" row" id="container">
+		<div class="form-container col-6">
+			<div class="form-detiles-contener">
+				
+				<h4><b>Creat Account</b></h4>
+
+
+
+				<form action="#" method="post" accept-charset="UTF-8"  id="signup"
+				enctype="application/x-www-form-urlencoded" autocomplete="on" validate >
+
+				<div >
+					<label for="user-name">Username</label>
+					<small class="validation-massage-div" id="user-name-validation"></small>
+				    <input type="text" id="user-name" name="user-name" 
+				    placeholder="User Name"  autofocus>
+				</div>
+
+				<div >
+					<label for="email">Email</label>
+					<small class="validation-massage-div" id="email-validation"></small>
+				    <input type="text"  id="email" placeholder="Email" >
+				</div>
+
+				<div class="pssword">
+					<label for="password">Pasword</label>
+					<input type="password"  style="margin-bottom: 2px;" id="password"  placeholder="**********" >
+					<small style="padding-top: 0px;"  class="validation-massage-div" id="passconfirm"></small>
+
+				</div>
+				<div class="pssword pass">
+					<label for="Confirmpasword">Confirm Pasword</label>
+					<input type="password" style="margin-bottom: 2px;"  id="Confirmpasword" placeholder="**********" >
+					<small style="padding-top: 0px;"  class="validation-massage-div" id="passconfir"></small>
+				</div>
+
+				<div >
+					<label id="i-am-a" >I am a</label>
+					<input type="radio" label="yes"  id="teacher" name="position" value="Teacher" checked>
+					<label for="teacher">Teacher</label>
+					<input type="radio"  id="student" name="position" value="Student" >
+					<label for="student">Student</label>
+
+				</div>
+
+				<input type="checkbox"><p class="form-massage-paragraf " id="check">I agree to the term and condition</p>
+
+				<input type="submit"class="butn" value="Creat Account" >
+
+				<p class="form-massage-paragraf">Already have an account?
+					<a href="login.html" style="color: rgb(248, 79, 0);text-decoration: none;">
+						Log In</a>
+				</p>
+
+				</form>
+
+			</div>
+
+		</div>
+
+        <div class="overlay-container col-6 ">
+			
+				<div class="overlay-right">
+					
+				<p style="font-size: 24px;"><b>Manage All your Exams Efficiently</b></p>
+				<p style="font-size: 18px;">Let's get you all set up so you can verify your <br>
+					 personal account and begin setting up your profile.</p><br>
+				</div>
+			
+		</div>
+
+
+		<script src="js/signup.js"></script>
+
+	
+		
+	</div>
+</body>
+</html>

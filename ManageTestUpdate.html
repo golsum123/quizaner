@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/ManageStudentProfile.css">
+    <link rel="stylesheet" href="css/ManageTeacherProfile.css">
+    <link rel="stylesheet" href="css/ManageTest.css">
+	<script src="js/signup.js"></script>
+    <title>Update Exam</title>
+    <style>
+    .profilePhoto-div #first-div { 
+        background-image: url(image/istockphoto-1340516763-170667a.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+    @media (max-width: 970px){
+        .formContainer { height: 900px;  }
+        .right { height: 380px }
+    }
+    @media screen and  (max-width: 541px){
+        .formContainer { height: 1000px; }
+        .right { height: 400px }
+        .left { height: 500px; }    
+        #discription { margin-top: 50px;}
+    }
+        
+    </style>
+	
+</head>
+<body>
+    <div id="container">
+        
+        <div class="column-divs">
+			<div class="navbar-row  " id="mytopnav"  >
+				<div class="navbarSearch-div1">
+					<form class="search-form" action="/search" role="search">
+						<input type="submit"  id="submit">
+				        <input type="search" id="search" name="p" placeholder="Search">
+					</form>
+				</div>
+				<div class="navbarSearch-div2">
+					<div class="alertpic"><img src="image/ic_add_alert_24px.png" alt=""></div>
+				    <small class=".min-profimg">
+						<img class="min-profimg"  src="image/min-profile.jpg" alt="profile">
+					</small> 
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+							<div class="addtest"><small><p style="color: #FE6036;">Add <br> New Test</p> <a href=""> + </a></small></div>
+							<ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+						  <ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+						  <ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+						  <ul class="Coin"><li><a href="">Coin</a></li></ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row-divs">
+				<div class="navbar-column topnav " >
+					<div class="addtest"><small><p>Add <br> New Test</p> <a href=""> + </a></small></div>
+					<ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+					<ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+					<ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+					<ul class="Coin"><li><a href="">Coin</a></li></ul>
+				 </div>
+
+
+
+				<div class="formContainer">
+					<div class="right">
+						<form action="#" method="post" accept-charset="UTF-8"  id="signup" name="form1"
+						enctype="application/x-www-form-urlencoded" autocomplete="on" validate >
+						   <h5>Update Exam</h5  >
+							<div >
+								<label for="user-name">Name</label>
+								<input type="text" id="user-name" name="user-name" placeholder="User Name"  autofocus>
+							</div>
+                            <div class="catagoryAndScore-div">
+								<div id="catagory-div">
+									<label for="Catagory">Catagory</label>
+									<input list="catagory" id="Catagory" value="English" >
+                                    <datalist id="catagory">
+                                        <option value="English">
+                                        <option value="Math">
+                                        <option value="Biology">
+                                        <option value="Physics">
+                                    </datalist>
+								</div>
+                                <div id="score-div">
+                                    <label for="Score">Score</label>
+                                    <input type="number" min="1" max="100" id="Score" placeholder="Test Score">
+                                </div>
+                            </div>
+							<div>
+								<label  for="date">Test Date</label>
+                                <input type="Date" id="date">
+							</div>
+                            <div>
+								<label  for="NoQustion">Number of Qustions</label>
+                                <input type="number" id="NoQustion" placeholder="23">
+							</div>
+                            
+						</form>
+					</div>
+
+
+
+					<div class="left">
+						<form action="#" method="post" accept-charset="UTF-8"  id="form2" name="form2"
+						enctype="application/x-www-form-urlencoded" autocomplete="on" validate>
+						<div class="Privacy-price-pic-div">
+                            <div class="privacy-price-div">
+                                <div >
+                                    <label for="privacy" >Privacy</label>
+                                    <input type="text"  id="privacy"   placeholder="Privacy">
+                                </div>
+                                <div >
+                                    <label for="price">Price <img class="info-pic" src="image/ic_info_outline_24px.png"></label>
+                                    <input type="text"  id="price"   placeholder="price">
+                                </div>
+                            </div>
+                            <div class="profilePhoto-div" >
+								<label  for="uploadPic" id="profile-picture">Image</label>
+								<div id="first-div" onclick="getfile()"></div>
+								<div style="height:0px; width:0px; overflow: hidden;"><input id="uploadPic" type="file"></div>
+							</div>
+                        </div>
+                        <div id="discription">
+							<label for="TestDiscription" class="label-discription">Test Description</label>
+							<textarea  id="TestDiscription"   placeholder="Test Discription"></textarea>
+						</div>
+                        <input type="submit"class="butn1" value="Save Test and Add Qustion" onclick="submitform()">
+						<input type="submit"class="butn" value="Save" onclick="submitform()">
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+    </div>
+	<script src="js/signup.js"></script>
+</body>
+</html>

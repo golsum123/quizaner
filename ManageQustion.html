@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/ManageStudentProfile.css">
+    <link rel="stylesheet" href="css/ManageTeacherProfile.css">
+    <link rel="stylesheet" href="css/ManageTest.css">
+	<script src="js/signup.js"></script>
+    <title>Manage Qustion</title>
+    <style>
+    .profilePhoto-div #first-div { 
+        background-image: url(image/istockphoto-1340516763-170667a.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border: none;
+    }
+    .option { margin-bottom: 11px;}
+    @media (max-width: 970px){
+        .formContainer { height: 950px;  }
+        .right { height: 380px }
+        .left { 
+            height: 500px; margin-top: 70px; 
+            border-top: 1px solid #b35439;
+            padding-top: 30px;
+        }    
+
+    }
+    @media screen and  (max-width: 541px){
+        .formContainer { height: 1000px; }
+        .right { height: 400px; margin-bottom: 30px; }
+        .left { height: 500px; margin-top: 80px; padding-top: 0px;}    
+        #discription { margin-top: 50px;}
+        .option { margin-bottom: 0px;}
+    }
+        
+    </style>
+	
+</head>
+<body>
+    <div id="container">
+        
+        <div class="column-divs">
+			<div class="navbar-row  " id="mytopnav"  >
+				<div class="navbarSearch-div1">
+					<form class="search-form" action="/search" role="search">
+						<input type="submit"  id="submit">
+				        <input type="search" id="search" name="p" placeholder="Search">
+					</form>
+				</div>
+				<div class="navbarSearch-div2">
+					<div class="alertpic"><img src="image/ic_add_alert_24px.png" alt=""></div>
+				    <small class=".min-profimg">
+						<img class="min-profimg"  src="image/min-profile.jpg" alt="profile">
+					</small> 
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+							<div class="addtest"><small><p style="color: #FE6036;">Add <br> New Test</p> <a href=""> + </a></small></div>
+							<ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+						  <ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+						  <ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+						  <ul class="Coin"><li><a href="">Coin</a></li></ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row-divs">
+				<div class="navbar-column topnav " >
+					<div class="addtest"><small><p>Add <br> New Test</p> <a href=""> + </a></small></div>
+					<ul class="Dashboard"><li><a href="">Dashboard</a></li></ul>
+					<ul class="MyExam"><li><a href="">My Exam</a></li></ul>
+					<ul class="Toppers"><li ><a href="">Toppers</a></li></ul>
+					<ul class="Coin"><li><a href="">Coin</a></li></ul>
+				 </div>
+
+
+
+				<div class="formContainer">
+					<div class="right">
+						<form action="#" method="post" accept-charset="UTF-8"  id="signup" name="form1"
+						enctype="application/x-www-form-urlencoded" autocomplete="on" validate >
+						    <h5>Add/Update Question For Exam : Biology Test</h5  >
+                            <div id="discription">
+                                <label for="TestDiscription" class="label-discription">Qustion</label>
+                                <textarea  id="TestDiscription">This is one of the most realistic dashboards on the whole Behance This is one of the most realistic dashboards on the whole Behance This is one of the most realistic dashboards on the whole Behance This is one of the most realistic</textarea>
+                                </div>
+							<div class="Privacy-price-pic-div">
+                                <div class="privacy-price-div">
+                                    <div >
+                                        <label for="privacy" >Score</label>
+                                        <input type="text"  id="privacy"   placeholder="3.50">
+                                    </div>
+                                    <div >
+                                        <label for="price">Correct Option<img class="info-pic" src="image/ic_info_outline_24px.png"></label>
+                                        <input type="number"  id="price"   value="1">
+                                    </div>
+                                </div>
+                                <div class="profilePhoto-div" >
+                                    <label  for="uploadPic" id="profile-picture">Image</label>
+                                    <div id="first-div" onclick="getfile()"></div>
+                                    <div style="height:0px; width:0px; overflow: hidden;"><input id="uploadPic" type="file"></div>
+                                </div>
+                            </div>
+						</form>
+					</div>
+
+
+
+					<div class="left">
+						<form action="#" method="post" accept-charset="UTF-8"  id="form2" name="form2"
+						enctype="application/x-www-form-urlencoded" autocomplete="on" validate>
+                        <div class="option">
+                            <label for="option1" >Option 1</label>
+                            <input type="text"  id="option1"   placeholder="Option1">
+                        </div>
+                        <div class="option">
+                            <label for="option2" >Option 2</label>
+                            <input type="text"  id="option2"   placeholder="Option2">
+                        </div>
+                        <div class="option">
+                            <label for="option3" >Option 3</label>
+                            <input type="text"  id="option3"   placeholder="Option3">
+                        </div>
+                        <div class="option">
+                            <label for="option4" >Option 4</label>
+                            <input type="text"  id="option4"   placeholder="Option4">
+                        </div>
+						
+						<input type="submit"class="butn" value="Save" onclick="submitform()">
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+    </div>
+	<script src="js/signup.js"></script>
+</body>
+</html>
