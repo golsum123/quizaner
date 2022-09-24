@@ -47,14 +47,14 @@ li {
     list-style: none;
     font-size: 13px;
     height: 45px; border-radius: 18px;
-    margin-bottom: 2px;padding-left: 13px;
+    margin-bottom: 2px; margin-left: 10px;
     font-weight: bold;
     -webkit-align-items: center;
     align-items: center;
 }
 ul {
-    padding-left: 10px;
-    margin: 0px 0px;
+    padding-left: 0px;
+    margin: 0px;
 }
 li a {
     text-decoration: none;
@@ -65,7 +65,7 @@ li a {
     display: inline-block;
     height: 15px; width: 15px;
     background-image: url('../image/ic_help_outline_24px.png') ;
-    background-size: contain;
+    background-size: 15px;
     background-repeat: no-repeat;
     background-position: left center;
     margin: 0px 15px 0px 0px;
@@ -73,29 +73,29 @@ li a {
 .MyExam li::before {
     content: '';   
     display: inline-block;
-    height: 15px; width: 15px;
+    height: 20px; width: 20px;
     background-image: url('../image/ic_alarm_on_24px.png') ;
-    background-size: contain;
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position: left center;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 .Toppers li::before {
     content: '';   
     display: inline-block;
     height: 15px; width: 15px;
     background-image: url('../image/ic_account_circle_24px.png') ;
-    background-size: contain;
+    background-size: 15px;
     background-repeat: no-repeat;
     background-position: left center;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 .Coin li::before {
     content: '';   
     display: inline-block;
     height: 15px; width: 15px;
     background-image: url('../image/ic_error_outline_24px.png') ;
-    background-size: contain;
+    background-size: 15px;
     background-repeat: no-repeat;
     background-position: left center;
     margin: 0px 15px 0px 0px;
@@ -194,13 +194,14 @@ li a {
   background-color: white;
   min-width: 160px;
   overflow: auto;
+  border-radius: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   right: 0;
   z-index: 1;
 }
 .dropdown-content a {
   color: #FE6036;
-  padding: 12px 16px;
+  padding: 15px 0px;
   text-decoration: none;
   display: block;
 }

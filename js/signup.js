@@ -192,7 +192,7 @@ function showConfirmField() {
 }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-  }
+  } 
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -205,3 +205,8 @@ function myFunction() {
       }
     }
   }
+  // student Result js code
+function Average() {
+    var average = document.querySelector('.first-p').textContent;
+    document.querySelector('.Average').style.width = average[0]+ average[1] +"%";
+}
